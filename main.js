@@ -72,6 +72,7 @@
 // ];
 
 
+
 // ------ //
 
 const posts = [
@@ -123,7 +124,8 @@ const posts = [
   }
   
   
-  
+//   Creo dinamicamente un elemento HTML per i post 
+
   function addPostHtml(post) {
     const postElement = document.createElement('div');
     postElement.classList.add('post');
@@ -164,7 +166,8 @@ const posts = [
     return postElement;
   }
   
-  
+//   prendo un array di oggetti modificando la pagina
+
   function postsRendered(postsArray) {
     const container = document.getElementById('container');
     postsArray.forEach((post) => {
